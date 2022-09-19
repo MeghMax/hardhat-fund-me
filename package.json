@@ -1,0 +1,39 @@
+{
+  "name": "hardhat-fund-me",
+  "author": "MeghMax",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/providers": "^5.4.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.4",
+    "dotenv": "^14.2.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.7.1",
+    "hardhat": "^2.11.1",
+    "hardhat-deploy": "^0.11.15",
+    "hardhat-gas-reporter": "^1.0.7",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solidity-coverage": "^0.7.18"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "hardhat test --network goreli",
+    "lint": "solhint 'contracts/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format": "prettier --write .",
+    "coverage": "yarn hardhat coverage"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PatrickAlphaC/hardhat-fund-me-fcc",
+  "license": "MIT",
+  "dependencies": {
+    "alchemy-sdk": "^2.0.4"
+  }
+}
